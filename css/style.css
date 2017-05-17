@@ -1,0 +1,124 @@
+html{
+	font-family: sans-serif;
+	height: 100%;
+}
+
+body{
+	position: relative;
+	height: 100%;
+}
+
+
+.icons{
+	cursor: pointer;
+	padding: 0px 0px 0px 8px;
+}
+
+.editIcons{
+	display: none;
+	
+}
+
+.fa.fa-check{
+	display: none;
+	position: absolute;
+	top: 55%;
+	left: 10%;
+	cursor: pointer;	
+	color: darkcyan;
+	
+}
+
+
+
+.fa-picture-o{
+	color: cadetblue;
+}
+
+.fa-times{
+	color: crimson;
+}
+
+.fa-pencil-square-o{
+	color: cadetblue;
+}
+
+
+.itemsList li{
+	list-style-type: none;
+	padding: 2px;
+}
+
+.textItems{
+	color: darksalmon;
+
+}
+
+#editInput{
+	display: none;
+	color:burlywood;
+
+}
+
+.fa-floppy-o{
+	color: darkgoldenrod;
+}
+
+.fa-undo{
+	color: darkgray;
+}
+
+
+
+
+
+
+.imageContainer{
+	display: none;
+	background-image: url("https://s-media-cache-ak0.pinimg.com/736x/29/fa/14/29fa1441f2a0446e9aa45cee74495a83.jpg");
+	background-position: center;
+	width: 45%;
+	height: 45%;
+	position: relative;
+}
+
+#image{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	opacity: 0.5;
+	background: white;
+	
+
+}
+
+
+#imageAddSection{
+	//position: relative;
+}
+
+
+
+#addImageButton{
+	background-color: #008CBA;
+	border: none;
+	cursor: pointer;
+	text-decoration: none;
+	text-align: center;
+	padding: 15px 32px;
+	color: white;
+	font-weight: bold;
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	right: 40%;
+
+}
+
+#inputURL{
+	display: none;
+	position: absolute;
+	top: 45%;
+	left: 10%;
+	width: 80%;
+}
