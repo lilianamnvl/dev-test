@@ -6,17 +6,24 @@ html{
 body{
 	position: relative;
 	height: 100%;
+
 }
 
 
 .icons{
 	cursor: pointer;
 	padding: 0px 0px 0px 8px;
+
 }
+
 
 .editIcons{
 	display: none;
 	
+}
+
+.initialIcons{
+		padding: 3px;
 }
 
 .fa.fa-check{
@@ -25,8 +32,19 @@ body{
 	top: 55%;
 	left: 10%;
 	cursor: pointer;	
-	color: darkcyan;
+	color: white;
+	background: darkcyan;
 	
+}
+
+#checkIcon{
+	background: darkcyan;
+	opacity: 0.9;
+	border: solid 1px gray;
+	position: absolute;
+	top: 55%;
+	left: 10%;
+
 }
 
 
@@ -47,10 +65,12 @@ body{
 .itemsList li{
 	list-style-type: none;
 	padding: 2px;
+
 }
 
 .textItems{
 	color: darksalmon;
+	padding: 3px;
 
 }
 
@@ -68,6 +88,21 @@ body{
 	color: darkgray;
 }
 
+.fa.fa-file-image-o{
+	margin: 10px;
+	color: darkcyan;
+	font-size: 12px;
+	display: none;
+
+}
+
+.fa-window-close{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	color: cadetblue;
+}
+
 
 
 
@@ -75,11 +110,13 @@ body{
 
 .imageContainer{
 	display: none;
-	background-image: url("https://s-media-cache-ak0.pinimg.com/736x/29/fa/14/29fa1441f2a0446e9aa45cee74495a83.jpg");
 	background-position: center;
-	width: 45%;
-	height: 45%;
+	width: 40%;
+	height: 50%;
 	position: relative;
+	background-repeat: repeat;
+	left: 50%;
+	border-radius: 15px;
 }
 
 #image{
@@ -88,19 +125,14 @@ body{
 	position: relative;
 	opacity: 0.5;
 	background: white;
-	
-
+	border-radius: 8px;
 }
 
-
-#imageAddSection{
-	//position: relative;
-}
 
 
 
 #addImageButton{
-	background-color: #008CBA;
+	background-color: darkcyan;
 	border: none;
 	cursor: pointer;
 	text-decoration: none;
