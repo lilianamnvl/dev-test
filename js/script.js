@@ -2,7 +2,6 @@ var itemsArray = [];
 var deleteButton = document.getElementById("deleteItem");
 var elementsSection = document.getElementById('items');
 var currentValue = null;
-var inputState = 1; // if 1: change item, if 2: image adding
 var defBackground = "https://s-media-cache-ak0.pinimg.com/736x/29/fa/14/29fa1441f2a0446e9aa45cee74495a83.jpg";
 var imageSection = document.getElementsByClassName('imageContainer')[0];
 var img = imageSection.getElementsByTagName('img')[0];
@@ -29,7 +28,7 @@ function createItem(value) {
     var saveIcon = document.createElement("i");
     var undoIcon = document.createElement("i");
     var imageIcon = document.createElement("i");
-    var imageURL = null;
+
     var attImage = document.createElement("i");
 
 
@@ -133,7 +132,7 @@ function remove_item(elem) {
 }
 
 function add_image(elem) {
-    inputState = 2;
+    
     console.log('elem in add_image ->', elem);
     
     var currEl = elem;
@@ -177,16 +176,10 @@ console.log('elem in change_image ->', elem);
         elem.getElementsByClassName('editIcons')[i].style.display = "inline";
     }
     elem.getElementsByTagName('input')[0].style.display = "inline";
-}
-
-function has_image(elem) {
-    if (elem.imageURL != "") {
-        return true;
-    } else {
-        return false;
-    }
 
 }
+
+
 
 
 
@@ -220,7 +213,7 @@ function save_changes(elem) {
 
     //Agregar icono de imagen adjunta
 
-    if (has_image(elem)) {
+    if (elem.hasAttribute("imageURL")) {
         elem.getElementsByClassName('fa-file-image-o')[0].style.display = "inline";
         var closeIcon = imageSection.getElementsByTagName('i')[1];
     	closeIcon.style.display = "block";
@@ -230,6 +223,10 @@ function save_changes(elem) {
 
 
 }
+
+
+
+
 
 function showImage(elem) {
    
